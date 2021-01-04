@@ -1,5 +1,6 @@
 package io.erikrios.github.myservice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,7 +12,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnStartService: Button = findViewById(R.id.btn_start_service)
         btnStartService.setOnClickListener {
-
+            val mStartServiceIntent = Intent(this, MyService::class.java)
+            startService(mStartServiceIntent)
         }
 
         val btnStartJobIntentService: Button = findViewById(R.id.btn_start_job_intent_service)
