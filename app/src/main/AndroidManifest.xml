@@ -11,7 +11,8 @@
         android:theme="@style/Theme.Myservice">
         <service
             android:name=".MyJobIntentService"
-            android:exported="false"></service>
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
             android:name=".MyService"
             android:enabled="true"
