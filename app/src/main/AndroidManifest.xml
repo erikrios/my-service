@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Myservice">
         <service
+            android:name=".MyJobIntentService"
+            android:exported="false"></service>
+        <service
             android:name=".MyService"
             android:enabled="true"
             android:exported="true" />
