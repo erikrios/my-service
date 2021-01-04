@@ -1,3 +1,5 @@
+package io.erikrios.github.myservice
+
 import android.content.Context
 import android.content.Intent
 import android.util.Log
